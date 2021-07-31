@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple CSS Hamburger Menu</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <a href="#">
+        <h1>Logo</h1>
+      </a>
+
+      <nav role="navigation">
+        <div id="menu-toggle">
+          <div class="hidden">
+            <!--
+              Make a checkbox, that when checked show full menu
+              It is hidden, because we only need it to register 
+              that the menu button is clicked
+              -->
+            <input type="checkbox" />
+
+            <!-- Spans to form the lines in the burger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul class="menu" aria-label="main navigation">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#"><li>Gallery</li></a>
+          </ul> 
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
